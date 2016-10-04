@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="UserName"
+        android:id="@+id/editText15_username"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Choose Password"
+        android:id="@+id/editText16_password"
+        android:layout_below="@+id/editText15_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email Address"
+        android:id="@+id/editText18_email"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:id="@+id/editText19_contactnumber"
+        android:layout_below="@+id/editText18_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button17_register"
+        android:layout_below="@+id/editText19_contactnumber"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

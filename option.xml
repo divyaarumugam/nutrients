@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/f"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="Concentrate on diet"
+        android:id="@+id/textView14"
+        android:layout_marginTop="103dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRUITS"
+        android:id="@+id/button7_option_fruit"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEGETABLES"
+        android:id="@+id/button15_option_veg"
+        android:layout_below="@+id/button7_option_fruit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp" />
+</RelativeLayout>
