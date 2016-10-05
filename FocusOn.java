@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+
 public class FocusOn extends AppCompatActivity {
     Button Fruits,Veg;
 protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,10 @@ protected void onCreate(Bundle savedInstanceState) {
         Veg.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent i=new Intent (FocusOn.this,VegView.class);
+                Intent i=new Intent(FocusOn.this,VegView.class);
                 startActivity(i);
+
+
 
             }
         });

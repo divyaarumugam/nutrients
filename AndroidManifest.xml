@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.senthil.nutrients">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register"/>
+        <activity android:name=".Home"/>
+        <activity android:name=".Menu"/>
+        <activity android:name=".FruitsView"/>
+        <activity android:name=".VegView"/>
+        <activity android:name=".FocusOn"/>
+        <activity android:name=".AlarmActivity"/>
+        <activity android:name=".StopAlarm"/>
+        <activity android:name=".Calorie"/>
+        <activity android:name=".FocusOnSecond"/>
+        <activity android:name=".FruitsViewSecond"/>
+        <activity android:name=".VegViewSecond"/>
+        <activity android:name=".Describe"/>
+        <activity
+            android:name="com.example.senthil.nutrients.preferences.AlarmPreferencesActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.senthil.nutrients.AlarmActivity" >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.senthil.nutrients.AlarmActivity" />
+        </activity>
+        <service
+            android:process="com.example.senthil.nutrients.serviceProcess"
+            android:name="com.example.senthil.nutrients.service.AlarmService"
+            android:icon="@drawable/a"
+            android:label="@string/app_name"
+            >
+        </service>
+        <receiver android:name="com.example.senthil.nutrients.service.AlarmServiceBroadcastReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name = "com.example.senthil.nutrients.alert.AlarmAlertActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <receiver android:name="com.example.senthil.nutrients.alert.AlarmAlertBroadcastReciever" >
+        </receiver>
+        <receiver android:name = "com.example.senthil.nutrients.telephony.PhoneStateChangedBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

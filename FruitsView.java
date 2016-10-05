@@ -27,6 +27,7 @@ public class FruitsView extends AppCompatActivity {
             "Pineapple",
             "Kiwi"
 
+
     };
 
     Integer[] imgid={
@@ -43,8 +44,6 @@ public class FruitsView extends AppCompatActivity {
             R.drawable.raisins,
             R.drawable.pineapple,
             R.drawable.kiwi
-
-
     };
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +60,7 @@ public class FruitsView extends AppCompatActivity {
                         // TODO Auto-generated method stub
                         String Slecteditem= itemname[+position];
                         Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
-Intent i=new Intent(FruitsView.this,Alarm.class);
+                        Intent i=new Intent(FruitsView.this,AlarmActivity.class);
                         startActivity(i);
                     }
                 });

@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@drawable/o"
+    android:background="@drawable/v"
     android:layout_height="match_parent">
 
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText7"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:layout_weight="1"
-        android:text="Let be nutritious what is your important health goal right now ?" />
 
     <Button
         android:layout_width="wrap_content"
@@ -21,12 +12,10 @@
         android:textSize="25dp"
         android:textStyle="italic"
         android:id="@+id/button10_menu1"
-        android:layout_marginTop="77dp"
-        android:layout_below="@+id/editText7"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/textView11"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,43 +46,35 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Want to be energized"
-        android:gravity="center"
-        android:textSize="25dp"
-        android:textStyle="italic"
-        android:id="@+id/button8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/button6_menu3" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Increased Immunity"
-        android:gravity="center"
-        android:textSize="25dp"
-        android:textStyle="italic"
-        android:id="@+id/button9"
-        android:layout_below="@+id/button8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Calorie calculator"
-        android:id="@+id/button14"
+        android:id="@+id/button14_menu_calorie"
         android:textSize="25dp"
         android:textStyle="italic"
-        android:layout_below="@+id/button9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button6_menu3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView10"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets be Nutritious!!"
+        android:textSize="25dp"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

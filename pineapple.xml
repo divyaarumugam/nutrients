@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:onClick="setListFooter"
+        android:src="@drawable/pineapple"
+        android:layout_above="@+id/textView21"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pineapple"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:id="@+id/textView21"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView22"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protiens"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView24"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_toLeftOf="@+id/textView21"
+        android:layout_toStartOf="@+id/textView21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fats          "
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView27"
+        android:layout_alignRight="@+id/textView23"
+        android:layout_alignEnd="@+id/textView23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/textView26"
+        android:editable="false"
+        android:ellipsize="middle"
+        android:layout_below="@+id/textView22"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignRight="@+id/textView29"
+        android:layout_alignEnd="@+id/textView29"
+        android:layout_below="@+id/textView23"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25"
+        android:text="13g" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.5g"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.1g"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView25"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It improves respiratory health, improves digestion,prevents cancer."
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

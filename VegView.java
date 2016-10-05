@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+
 public class VegView extends AppCompatActivity {
     ListView list;
     String[] itemname ={
@@ -27,25 +28,24 @@ public class VegView extends AppCompatActivity {
             R.drawable.asparagus,
 
     };
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fruits);CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
+        setContentView(R.layout.fruits);
+        CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // TODO Auto-generated method stub
                 String Selecteditem= itemname[+position];
                 Toast.makeText(getApplicationContext(), Selecteditem, Toast.LENGTH_SHORT).show();
+                //ServerIPAddress.setIpaddress(Selecteditem);
                 Intent i=new Intent(VegView.this,Alarm.class);
                 startActivity(i);
             }
         });
     }
 }
-

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_height"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:hint="Height(Inches)"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2_weight"
+        android:layout_below="@+id/editText_height"
+        android:layout_alignLeft="@+id/editText_height"
+        android:layout_alignStart="@+id/editText_height"
+        android:hint="Weight(kg)"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText8_age"
+        android:layout_below="@+id/editText2_weight"
+        android:layout_centerHorizontal="true"
+        android:hint="Age(years)"/>
+
+
+    <RadioGroup
+        android:layout_width="150dip"
+        android:layout_height="90dip"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/editText8_age"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText8_age"
+        android:layout_alignStart="@+id/editText8_age">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:id="@+id/radioButton3_male"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radioButton4_female"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/button_calculate"
+        android:layout_marginBottom="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView10_result"
+        android:layout_alignEnd="@+id/textView10_result" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView10_result"
+        android:layout_above="@+id/button_calculate"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup" />
+</RelativeLayout>

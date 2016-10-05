@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiwi"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:id="@+id/textView21"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView22"
+        android:layout_above="@+id/textView26"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protiens"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView27"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fats          "
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView27"
+        android:layout_alignRight="@+id/textView23"
+        android:layout_alignEnd="@+id/textView23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="61"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/textView26"
+        android:editable="false"
+        android:ellipsize="middle"
+        android:layout_below="@+id/textView23"
+        android:layout_alignRight="@+id/textView28"
+        android:layout_alignEnd="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="15g"
+        android:layout_below="@+id/textView23"
+        android:layout_alignRight="@+id/imageView11"
+        android:layout_alignEnd="@+id/imageView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.1g"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/textView28"
+        android:layout_alignTop="@+id/textView29"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.5g"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView25"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrients dense fruit . reduces blood pressure&amp; prevents heart disease"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView21"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/kiwi"
+        android:layout_above="@+id/textView21"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

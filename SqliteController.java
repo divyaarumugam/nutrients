@@ -144,16 +144,13 @@ String details=null;
 	}
 
 
-	public int updatePassword(String pass,String emerPass,String emailId ,String policeNo,String guardianNo,String ipaddress) {
+	public int updatePassword(String name,String pass) {
         SQLiteDatabase database = this.getWritableDatabase();   
         ContentValues values = new ContentValues();
         
+        values.put("name", name);
         values.put("pass", pass);
-        values.put("emerPass", emerPass);
-        values.put("emailId", emailId);
-        values.put("policeNo", policeNo);
-        values.put("guardianNo", guardianNo);
-        values.put("ipaddress", ipaddress);
+
         
         return database.update("userdetails", values, "SLNO" + " = ?", new String[] {"1"});
     }

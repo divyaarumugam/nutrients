@@ -13,7 +13,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout2);
-         final int interval = 1000; // 1 Second
+         final int interval = 5000; // 1 Second
          Handler handler = new Handler();
          Runnable runnable = new Runnable() {
             public void run() {
